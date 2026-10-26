@@ -1,0 +1,2 @@
+AccuraOCR.xcframework/** filter=lfs diff=lfs merge=lfs -text
+AccuraOCR.xcframework/ios-arm64/AccuraOCR.framework/AccuraOCR filter=lfs diff=lfs merge=lfs -text
