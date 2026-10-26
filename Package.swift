@@ -1,24 +1,26 @@
-// swift-tools-version: 6.3
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
+// swift-tools-version: 5.9
 import PackageDescription
 
 let package = Package(
     name: "SidOCR",
+    platforms: [
+        .iOS(.v16)
+    ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "SidOCR",
-            targets: ["SidOCR"]
+            targets: ["AccuraOCR"]
         ),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/d-date/google-mlkit-swiftpm", from: "9.0.0"),
+        .package(url: "https://github.com/SVProgressHUD/SVProgressHUD.git", from: "2.3.1")
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "SidOCR"
-        ),
-
-    ],
-    swiftLanguageModes: [.v6]
+        .binaryTarget(
+            name: "AccuraOCR",
+            path: "AccuraOCR.xcframework"
+        )
+        // ← No regular .target here
+    ]
 )
