@@ -1,0 +1,585 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AccuraOCR",
+    "printedName": "AccuraOCR",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "TensorFlowLiteTaskVision",
+        "printedName": "TensorFlowLiteTaskVision",
+        "declKind": "Import",
+        "moduleName": "AccuraOCR",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccuraOCR"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ObjectDetectionHelper",
+        "printedName": "ObjectDetectionHelper",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "detectObject",
+            "printedName": "detectObject(image1:modelPath:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSMutableDictionary",
+                "printedName": "Foundation.NSMutableDictionary",
+                "usr": "c:objc(cs)NSMutableDictionary"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSString",
+                "printedName": "Foundation.NSString",
+                "usr": "c:objc(cs)NSString"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AccuraOCR@objc(cs)ObjectDetectionHelper(im)detectObjectWithImage1:modelPath:",
+            "mangledName": "$s9AccuraOCR21ObjectDetectionHelperC06detectC06image19modelPathSo19NSMutableDictionaryCSo7UIImageC_So8NSStringCtF",
+            "moduleName": "AccuraOCR",
+            "objc_name": "detectObjectWithImage1:modelPath:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "objectDetector",
+            "printedName": "objectDetector(modelPath:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSString",
+                "printedName": "Foundation.NSString",
+                "usr": "c:objc(cs)NSString"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AccuraOCR@objc(cs)ObjectDetectionHelper(im)objectDetectorWithModelPath:",
+            "mangledName": "$s9AccuraOCR21ObjectDetectionHelperC14objectDetector9modelPathySo8NSStringC_tF",
+            "moduleName": "AccuraOCR",
+            "objc_name": "objectDetectorWithModelPath:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ObjectDetectionHelper",
+                "printedName": "AccuraOCR.ObjectDetectionHelper",
+                "usr": "c:@M@AccuraOCR@objc(cs)ObjectDetectionHelper"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AccuraOCR@objc(cs)ObjectDetectionHelper(im)init",
+            "mangledName": "$s9AccuraOCR21ObjectDetectionHelperCACycfc",
+            "moduleName": "AccuraOCR",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AccuraOCR@objc(cs)ObjectDetectionHelper",
+        "mangledName": "$s9AccuraOCR21ObjectDetectionHelperC",
+        "moduleName": "AccuraOCR",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccuraOCR"
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "AccuraOCR"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Encryption",
+        "printedName": "Encryption",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "aesEncrypt",
+            "printedName": "aesEncrypt(data:keyData:ivData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AccuraOCR@objc(cs)Encryption(im)aesEncryptWithData:keyData:ivData:",
+            "mangledName": "$s9AccuraOCR10EncryptionC10aesEncrypt4data7keyData02ivH010Foundation0H0VSgAJ_A2JtF",
+            "moduleName": "AccuraOCR",
+            "objc_name": "aesEncryptWithData:keyData:ivData:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encryptImage",
+            "printedName": "encryptImage(image:key:iv:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AccuraOCR@objc(cs)Encryption(im)encryptImageWithImage:key:iv:",
+            "mangledName": "$s9AccuraOCR10EncryptionC12encryptImage5image3key2ivSo6NSDataCSgSo7UIImageC_S2StF",
+            "moduleName": "AccuraOCR",
+            "objc_name": "encryptImageWithImage:key:iv:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateExifAttributesAndReturnData",
+            "printedName": "updateExifAttributesAndReturnData(of:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AccuraOCR@objc(cs)Encryption(im)updateExifAttributesAndReturnDataOf:",
+            "mangledName": "$s9AccuraOCR10EncryptionC33updateExifAttributesAndReturnData2of10Foundation0I0VSgSo7UIImageC_tF",
+            "moduleName": "AccuraOCR",
+            "objc_name": "updateExifAttributesAndReturnDataOf:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkTiffData",
+            "printedName": "checkTiffData(in:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AccuraOCR@objc(cs)Encryption(im)checkTiffDataIn:",
+            "mangledName": "$s9AccuraOCR10EncryptionC13checkTiffData2iny10Foundation0F0V_tF",
+            "moduleName": "AccuraOCR",
+            "objc_name": "checkTiffDataIn:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveImageWithTiffData",
+            "printedName": "saveImageWithTiffData(imageData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AccuraOCR@objc(cs)Encryption(im)saveImageWithTiffDataWithImageData:",
+            "mangledName": "$s9AccuraOCR10EncryptionC21saveImageWithTiffData05imageH0y10Foundation0H0V_tF",
+            "moduleName": "AccuraOCR",
+            "intro_iOS": "14",
+            "objc_name": "saveImageWithTiffDataWithImageData:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Encryption",
+                "printedName": "AccuraOCR.Encryption",
+                "usr": "c:@M@AccuraOCR@objc(cs)Encryption"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AccuraOCR@objc(cs)Encryption(im)init",
+            "mangledName": "$s9AccuraOCR10EncryptionCACycfc",
+            "moduleName": "AccuraOCR",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AccuraOCR@objc(cs)Encryption",
+        "mangledName": "$s9AccuraOCR10EncryptionC",
+        "moduleName": "AccuraOCR",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccuraOCR"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AccuraOCR"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AccuraOCR"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "AccuraOCR"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/accura\/Desktop\/sdk\/passive\/ios-kyc-framework\/AccuraOCR\/VideoCamera\/objectDetection\/ModelFile.swift",
+      "kind": "Array",
+      "offset": 932,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/accura\/Library\/Developer\/Xcode\/DerivedData\/AccuraOCR-ayndupgmnnrursfxlekcrwyghyjy\/Build\/Intermediates.noindex\/AccuraOCR.build\/Release-iphoneos\/AccuraOCR.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 741,
+      "length": 16,
+      "value": "\"accuraScanLogo\""
+    },
+    {
+      "filePath": "\/Users\/accura\/Library\/Developer\/Xcode\/DerivedData\/AccuraOCR-ayndupgmnnrursfxlekcrwyghyjy\/Build\/Intermediates.noindex\/AccuraOCR.build\/Release-iphoneos\/AccuraOCR.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 884,
+      "length": 11,
+      "value": "\"icn_close\""
+    },
+    {
+      "filePath": "\/Users\/accura\/Library\/Developer\/Xcode\/DerivedData\/AccuraOCR-ayndupgmnnrursfxlekcrwyghyjy\/Build\/Intermediates.noindex\/AccuraOCR.build\/Release-iphoneos\/AccuraOCR.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1018,
+      "length": 9,
+      "value": "\"icn_mic\""
+    },
+    {
+      "filePath": "\/Users\/accura\/Library\/Developer\/Xcode\/DerivedData\/AccuraOCR-ayndupgmnnrursfxlekcrwyghyjy\/Build\/Intermediates.noindex\/AccuraOCR.build\/Release-iphoneos\/AccuraOCR.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1145,
+      "length": 6,
+      "value": "\"oval\""
+    }
+  ]
+}
