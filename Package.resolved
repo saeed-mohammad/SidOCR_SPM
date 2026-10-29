@@ -1,5 +1,4 @@
 {
-  "originHash" : "248c0805c4a388f930bf25df14205c9e0e3be677b3e1f5224204fd2ae19b11df",
   "pins" : [
     {
       "identity" : "google-mlkit-swiftpm",
@@ -63,7 +62,16 @@
         "revision" : "c33f7c775ba7feea6047a1fc3257f2e5863b44f7",
         "version" : "2.3.1"
       }
+    },
+    {
+      "identity" : "tensorflow",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/saeed-mohammad/Tensorflow",
+      "state" : {
+        "revision" : "edaaad933e5bfe68674048f43f51654e96f658ca",
+        "version" : "1.0.6"
+      }
     }
   ],
-  "version" : 3
+  "version" : 2
 }
