@@ -1,0 +1,31 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AccuraOCR
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
+@_exported import AccuraOCR
+import CommonCrypto
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+import TensorFlowLiteTaskVision
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc public class ObjectDetectionHelper : ObjectiveC::NSObject {
+  @objc public func detectObject(image1: UIKit::UIImage, modelPath: Foundation::NSString) -> Foundation::NSMutableDictionary
+  @objc public func objectDetector(modelPath: Foundation::NSString)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class Encryption : ObjectiveC::NSObject {
+  @objc public func aesEncrypt(data: Foundation::Data, keyData: Foundation::Data, ivData: Foundation::Data) -> Foundation::Data?
+  @objc public func encryptImage(image: UIKit::UIImage, key: Swift::String, iv: Swift::String) -> Foundation::NSData?
+  @objc public func updateExifAttributesAndReturnData(of originalImageData: UIKit::UIImage) -> Foundation::Data?
+  @objc public func checkTiffData(in imageData: Foundation::Data)
+  @available(iOS 14, *)
+  @objc public func saveImageWithTiffData(imageData: Foundation::Data)
+  @objc override dynamic public init()
+  @objc deinit
+}
