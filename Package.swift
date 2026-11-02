@@ -21,8 +21,11 @@ let package = Package(
         .binaryTarget(
             name: "AccuraOCR",
             path: "AccuraOCR.xcframework"
-        )
-      
+        ),
+//        .Target(
+//         name: "AccuraOCR",
+//         path: "AccuraOCR.xcframework"
+//        )
         // ← No regular .target here
     ]
 )
