@@ -18,14 +18,15 @@ let package = Package(
         .package(url: "https://github.com/saeed-mohammad/Tensorflow", from: "1.0.6")
     ],
     targets: [
+//        .binaryTarget(
+//            name: "AccuraOCR",
+//            path: "AccuraOCR.xcframework"
+//        ),
         .binaryTarget(
             name: "AccuraOCR",
-            path: "AccuraOCR.xcframework"
-        ),
-//        .Target(
-//         name: "AccuraOCR",
-//         path: "AccuraOCR.xcframework"
-//        )
+            url: "https://github.com/saeed-mohammad/SidOCR_SPM/releases/download/1.0.6/AccuraOCR.xcframework.zip",
+            checksum: "fa07e96e857f66b0833b29b6c9b7d048e9f3b468d85e5bd8684b173cc531969e"
+        )
         // ← No regular .target here
     ]
 )
