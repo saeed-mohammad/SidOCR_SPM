@@ -1,2 +1,6 @@
 AccuraOCR.xcframework/
 AccuraOCR.xcframework.zip
+.DS_Store
+.build/
+.swiftpm/
+
