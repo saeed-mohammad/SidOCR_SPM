@@ -10,13 +10,19 @@ let package = Package(
    ],
 
    products: [
-       .library(
-           name: "SidOCR",
-           targets: [
-               "AccuraOCR",
-               "SidOCRDependencies"
-           ]
-       )
+       // .library(
+       //     name: "SidOCR",
+       //     targets: [
+       //         "AccuraOCR",
+       //         "SidOCRDependencies"
+       //     ]
+       // )
+      .library(
+          name: "SidOCR",
+          targets: [
+              "SidOCRDependencies"
+          ]
+      )
    ],
 
    dependencies: [
